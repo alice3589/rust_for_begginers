@@ -5,10 +5,12 @@ fn main() {
     }
 
     // println!("{}", s);
+    {
+        let mut s = String::from("hello");
 
-    let mut s = String::from("hello");
+        s.push_str(", world!");
 
-    s.push_str(", world!");
-
-    println!("{}", s);
+        println!("{}", s);
+    }
+    // OS にメモリを返す
 }
