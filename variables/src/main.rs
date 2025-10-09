@@ -1,5 +1,5 @@
 fn main() {
-    let mut x = 5;
+    let mut x: i32 = 5;  
     const CONSTANT: usize = 100;
     println!("The value of CONSTANT is: {}", CONSTANT);
     println!("The value of x is: {}", x);
