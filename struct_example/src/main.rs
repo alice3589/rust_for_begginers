@@ -16,10 +16,14 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
+    fn set_width(&mut self, width: u32) {
+        self.width = width;
+    }
 }
 
 fn main() {
-    let rect = Rectangle {
+    let mut rect = Rectangle {
         width: 30,
         height: 50,
     };
@@ -32,8 +36,11 @@ fn main() {
         square.area()
     );
 
+    println!("{:?}", &rect);
+    println!("{:?}", &square);
+
+    rect.set_width(40);
     println!("{:?}", rect);
-    println!("{:?}", square);
 }
 
 fn area(rectangle: &Rectangle) -> u32 {
