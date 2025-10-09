@@ -1,6 +1,6 @@
 fn main() {
-    let x: usize = 6;
-    let y: f64 = 1.5;
-    let z = (x as f64) / y;
-    println!("z: {}", z);
+    for elm in 0..5 {
+        // 0 <= elm < 5
+        println!("{}", elm);
+    }
 }
