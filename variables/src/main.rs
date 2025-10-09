@@ -12,8 +12,12 @@ fn main() {
 
     {
         let y = y * 2; // 12
+        let z = 5;
         println!("The value of y in the inner scope is: {}", y);
+        println!("The value of z is {}", z);
     }
+
+    // println!("The value of z is: {}", z); これだとエラーになる
 
     println!("The value of y is: {}", y);
 }
