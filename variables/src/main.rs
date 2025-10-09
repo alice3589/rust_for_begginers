@@ -20,4 +20,10 @@ fn main() {
     // println!("The value of z is: {}", z); これだとエラーになる
 
     println!("The value of y is: {}", y);
+
+    let some_string = "aaa";
+    println!("The value of some_string is: {}", some_string);
+
+    let some_string = some_string.len();
+    println!("The length of some_string is: {}", some_string);
 }
