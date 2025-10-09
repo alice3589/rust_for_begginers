@@ -12,7 +12,7 @@ fn main() {
 
     {
         let y = y * 2; // 12
-        let z = 5;
+        let z = 5; // このブロックの中だけで使用可能な変数
         println!("The value of y in the inner scope is: {}", y);
         println!("The value of z is {}", z);
     }
