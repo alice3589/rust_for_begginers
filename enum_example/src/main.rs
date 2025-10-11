@@ -6,13 +6,19 @@ enum Message {
     ChangeColor(i32, i32, i32),
 }
 
+impl Message {
+    fn show_this_message(&self) {
+        println!("{:?}", self);
+    }
+}
+
 fn main() {
     let mut message = Message::Quit;
-    println!("{:?}", message);
+    message.show_this_message();
     message = Message::Move { x: 30, y: 40 };
-    println!("{:?}", message);
+    message.show_this_message();
     message = Message::Write("content".to_string());
-    println!("{:?}", message);
+    message.show_this_message();
     message = Message::ChangeColor(255, 0, 0);
-    println!("{:?}", message);
+    message.show_this_message();
 }
