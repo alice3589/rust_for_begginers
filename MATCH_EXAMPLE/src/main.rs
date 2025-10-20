@@ -15,7 +15,12 @@ fn main() {
     println!("Yellow Color Code {}", color_to_str(yellow));
     find_maybe_number(Some(5));
     find_maybe_number(None);
-
+    let maybe_number: Option<u32> = None;
+    if let Some(number) = maybe_number {
+        println!("number: {}", number);
+    } else {
+        println!("this is else stmt");
+    }
 }
 
 // enum Option {
