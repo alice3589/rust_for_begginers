@@ -8,4 +8,5 @@ fn main() {
     println!("Hello, world!");
     hello();
     println!("returned: {}", return_three());
+    println!("Hello from main");
 }
